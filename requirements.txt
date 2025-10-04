@@ -1,6 +1,7 @@
 pip>=25.2
 setuptools>=75.0
 wheel
+
 scikit-learn==1.5.1
 numpy>=1.26.4
 scipy>=1.13.1
@@ -18,11 +19,14 @@ streamlit==1.29.0
 PyPDF2==3.0.1
 
 # Machine Learning & RAG
-sentence-transformers==2.2.2
-tokenizers==0.19.1   # ✅ prebuilt wheels available
-huggingface-hub==0.22.2
 torch==2.3.0 --extra-index-url https://download.pytorch.org/whl/cpu
 transformers==4.41.2
+sentence-transformers==2.2.2
+tokenizers==0.19.1
+huggingface-hub==0.22.2
+
+# Vector DB (Qdrant client)
+qdrant-client==1.8.2   # ✅ this has wheels
 
 # API Calls
 requests==2.31.0
