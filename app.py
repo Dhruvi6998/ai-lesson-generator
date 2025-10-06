@@ -5,7 +5,8 @@ import time
 import os
 
 # Backend API URL
-BACKEND_URL = os.getenv("BACKEND_URL") or st.secrets.get("BACKEND_URL", "http://localhost:8000")
+API_BASE_URL = os.getenv("BACKEND_URL") or st.secrets.get("BACKEND_URL", "http://localhost:8000")
+
 
 def check_backend():
     """Check if backend is running"""
